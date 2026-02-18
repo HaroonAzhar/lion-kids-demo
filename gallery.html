@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="habitat.html">Habitat</a></li>
+                <li><a href="diet.html">Diet</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Lion Photo Gallery</h1>
+        <p style="text-align: center;">Click on an image to see it bigger!</p>
+
+        <div class="gallery-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <img src="images/lion_family.png" alt="A lion pride resting together">
+                <div class="gallery-caption">A Lion Family</div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <img src="images/lion_roar.png" alt="A male lion roaring">
+                <div class="gallery-caption">Hear Him Roar!</div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="gallery-item">
+                <img src="images/lion_cub.png" alt="A cute lion cub playing">
+                <div class="gallery-caption">Cute Cub Playing</div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <img src="images/lion_hunt.png" alt="Lionesses looking across the savanna">
+                <div class="gallery-caption">Lionesses Watching</div>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+        <a class="prev nav-btn" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next nav-btn" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <p>Created for School Projects!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
